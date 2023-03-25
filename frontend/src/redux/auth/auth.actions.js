@@ -5,7 +5,7 @@ export const signupData =
   async (dispatch) => {
     try {
       dispatch({type: SIGNUP_REQUEST});
-      let res = await fetch("http://localhost:8080/signup", {
+      let res = await fetch("https://taskapp-c1d2.onrender.com/signup", {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const LoginData = (cred) => async (dispatch) => {
   try {
     dispatch({type: LOGIN_REQUEST});
     
-    let res = await fetch("http://localhost:8080/login", {
+    let res = await fetch("https://taskapp-c1d2.onrender.com/login", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
